@@ -36,11 +36,11 @@ app.post('/',function(req,res)
   };
 
   const JSONdata = JSON.stringify(data1);
-  const url = "https://us19.api.mailchimp.com/3.0/lists/d60f158018";
+  const url = "https://us19.api.mailchimp.com/3.0/lists/d60f159019";
 
 const options = {
   method : 'POST',
-  auth : "manasShankar:fe36a9b9e29789e6bbc694434b134f5c-us19"
+  auth : "manasShankar:fe36a9b9e29789e6bbc694434b134f5c-us14"
 };
 const request = https.request(url,options,function(response){
             if(response.statusCode === 200)
@@ -74,11 +74,3 @@ app.listen( process.env.PORT || 3000,function()
 });
 
 
-
-// API KEY
-// 28036b17e8d83a4aa9532cec998085a5-us19
-// fe36a9b9e29789e6bbc694434b134f5c-us19
-
-
-// LIST ID
-// d60f158018
